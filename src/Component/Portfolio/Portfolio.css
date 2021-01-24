@@ -1,0 +1,56 @@
+.PortfolioInfo  img{
+    width: 100%;
+    height: auto;
+}
+
+.Portfolio {
+  text-align: center;
+  color: white;
+  background-color: #2b3c31f2;
+  background-color: #2b3c3194;
+}
+.Portfolio a {
+  text-decoration: none;
+  background-color: rgb(53 51 51);
+  color: white;
+  border-radius: 4px;
+  padding: 5px;
+}
+  
+.Portfolio h2 {
+  font-size: 1em;
+  margin: auto;
+  padding: 10px;
+}
+.Portfolio h1 {
+  margin: auto;
+  padding: 10px;
+}
+.PortfolioInfo div p{
+  padding: 10px;
+  margin: 0;
+}
+
+.wildArtMuseums {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.atoutBranches {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.atoutBranches p {
+  text-align: initial;
+}
+.wildArtMuseums img, .atoutBranches img {
+  cursor: pointer;
+}
+.BsArrowBarDown {
+  font-size: 2em;
+}
+@media only screen and (min-width: 800px) {
+  .PortfolioInfo img {
+    width: 20%;
+  }
+}
+

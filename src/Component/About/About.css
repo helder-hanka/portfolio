@@ -1,0 +1,113 @@
+.container-About {
+  background-color: black;
+  text-align: center;
+  background-image: url('../../Photos/wooden-wall.jpg');
+}
+.container-About {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.About {
+  padding-bottom: 20px;
+}
+
+.container-About div h1 {
+  padding-top: 20px;
+}
+.container-About h1, .container-About h2 {
+  margin: auto;
+}
+.container-About h2 {
+  margin: auto;
+  font-size: larger;
+  padding: 20px;
+}
+
+.container-About div img {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 10px 5px #05050563;
+}
+.AboutThree {
+  padding: 5px;
+}
+
+.AboutFour h2 {
+  padding-top: 10px;
+  font-size: larger;
+}
+.AboutFour p {
+  margin: auto;
+}
+.AboutFour {
+  padding-bottom: 20px;
+}
+
+.CV a {
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+}
+
+.datas {
+  font-weight: 600;
+}
+
+
+.datas .CV {
+  padding: 5px;
+  background-color: #00000096;
+  width: 167px;
+  border-radius: 5px;
+}
+
+.stack {
+  padding-top: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+  .About {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .container-About {
+    padding-bottom: 20px;
+  }
+  .container-About .image {
+    order: -2;
+    margin: auto;
+    padding-left: 20px;
+  }
+  .AboutTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .AboutThree {
+    flex-basis: 50%;
+  }
+  .AboutThree p {
+    text-align: initial;
+  }
+  .AboutFour {
+    padding: 10px;
+    order: -1;
+    width: 500px;
+    margin: auto;
+  }
+  .AboutFour p {
+    text-align: initial;
+  }
+  .About div img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .datas p {
+    text-align: center;
+  }
+} 

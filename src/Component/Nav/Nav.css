@@ -1,0 +1,33 @@
+ul {
+  margin: auto;
+  position: fixed;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0c0000;
+  right: 0px;
+  left: 0px;
+  z-index: 3;
+}
+
+li{
+  display: inline;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+nav {
+  margin: auto;
+  right: 0px;
+  left: 0px;
+}

@@ -1,0 +1,54 @@
+header {
+  background-image: url('../../Photos/leaf.jpg');
+}
+header {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 48rem;
+}
+.App-header {
+  color: white;
+  text-align: center;
+}
+.App-header h2 {
+  margin: auto;
+  padding: 10px;
+  font-size: initial;
+}
+.container-Reaseau h1{
+  margin: auto;
+  padding: 10px;
+  font-size: 1.5em;
+}
+.Reaseau {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding: 10px;
+}
+.Reaseau a {
+  color: white;
+  padding: 10px;
+  
+}
+.container-text {
+  font-size: 1em;
+}
+.container-text div{
+  background-color: rgba(58, 57, 37, 0.473);
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 3px 10px 9px #560a0a5c
+}
+.container-text p {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+  .container-Reaseau {
+    padding-top: 30px;
+  }
+  
+} 
