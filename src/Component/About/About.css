@@ -21,7 +21,6 @@
 .container-About h2 {
   margin: auto;
   font-size: larger;
-  padding: 20px;
 }
 
 .container-About div img {
@@ -29,19 +28,18 @@
   height: auto;
   box-shadow: 5px 10px 5px #05050563;
 }
-.AboutThree {
-  padding: 5px;
+.container-About .title {
+  margin-bottom: 30px;
 }
 
 .AboutFour h2 {
-  padding-top: 10px;
+  padding: 10px;
   font-size: larger;
 }
 .AboutFour p {
+  text-align: initial;
   margin: auto;
-}
-.AboutFour {
-  padding-bottom: 20px;
+  color: #ffffffc7;
 }
 
 .CV a {
@@ -50,8 +48,8 @@
   padding: 8px;
 }
 
-.datas {
-  font-weight: 600;
+.datas p {
+  text-align: center;
 }
 
 
@@ -65,49 +63,57 @@
 .stack {
   padding-top: 10px;
 }
+.AboutText, .AboutContact {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 
-@media only screen and (min-width: 800px) {
+  box-shadow: 10px 4px 25px;
+  border-radius: 10px;
+  background-color: rgb(69 64 3 / 40%);
+  margin-bottom: 22px;
+  padding: 10px;
+}
+.AboutFour {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.container-About .image {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 1319px) {
   .About {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+	  justify-content: space-around;
+	  align-content: center;
+  }
+  .About, .AboutFour, .image {
+    padding: 10px;
   }
   .container-About {
     padding-bottom: 20px;
   }
   .container-About .image {
     order: -2;
-    margin: auto;
-    padding-left: 20px;
-  }
-  .AboutTwo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  .AboutThree {
-    flex-basis: 50%;
   }
   .AboutThree p {
     text-align: initial;
   }
-  .AboutFour {
-    padding: 10px;
-    order: -1;
-    width: 500px;
-    margin: auto;
-  }
-  .AboutFour p {
-    text-align: initial;
-  }
-  .About div img {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-  }
   .datas p {
     text-align: center;
   }
-} 
+  .container-About div img {
+    border-radius: 15px;
+    width: 100%;
+  }
+  
+}
+@media only screen and (min-width: 700px) {
+  .container-About div img {
+    border-radius: 15px;
+    width: 90%;
+  }
+}

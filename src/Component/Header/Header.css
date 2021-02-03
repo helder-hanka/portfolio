@@ -1,10 +1,11 @@
 header {
-  background-image: url('../../Photos/leaf.jpg');
+  background-image: url('../../Photos/hummingbirdjpg.jpg');
 }
 header {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: unset;
+  background-size: cover;
   height: 48rem;
 }
 .App-header {

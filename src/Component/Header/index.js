@@ -4,6 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 import { AiFillLinkedin } from 'react-icons/ai';
 import Slide from 'react-reveal/Slide';
 import Roll from 'react-reveal/Roll';
+import Zoom from 'react-reveal/Zoom';
 import './Header.css'
 const Header = () => {
   const [datas, setData] = useState([]);
@@ -15,12 +16,17 @@ const Header = () => {
 
   const displayNetwork = datas.map((data, index) => 
     <div key={index}  className="Reaseau">
-      <div><a href={data.github} target="_blank" rel="noopener noreferrer"><FaGithub/></a></div>
-      <div><a href={data.linkedin} target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></a></div>
+      
+      <div><Zoom left cascade><a href={data.github} target="_blank" rel="noopener noreferrer"><FaGithub/></a></Zoom></div>
+      <div><Zoom left cascade><a href={data.linkedin} target="_blank" rel="noopener noreferrer"><AiFillLinkedin /></a></Zoom></div>
+      
     </div>
   )
 
-  const displayName = datas.map((data, index) => <Fragment key={index}><h1><Slide left>{ data.firstname}</Slide><Roll cascade>{ data.lastname} </Roll></h1></Fragment>)
+  const displayName = datas.map((data, index) => 
+  <Fragment key={index}>
+    <h1><Slide left>{ data.firstname}</Slide><Roll cascade></Roll>{ data.lastname} </h1>
+  </Fragment>)
   return (
     <header>
       <div className="App-header">
