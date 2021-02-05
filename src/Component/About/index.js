@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import laptop from '../../Photos/laptop.jpg'
 import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
 import { arrayInfo } from "../arrayInfo"
@@ -17,7 +16,8 @@ const About = () => {
   const displayStack = datas.map(data => data.stack);
 
   return (
-    <div className="container-About">
+    <section className="section-About">
+      <div className="container-About">
       <div className="title">
         <h1>À PROPOS</h1>
         <Slide left>
@@ -25,7 +25,19 @@ const About = () => {
         </Slide>
       </div>
       <div className="About">
-       
+
+        <div className="image">
+          {
+            datas && datas.map((data, index) => 
+                <Zoom>
+              <div key={index}>
+                <img src={data.image} alt={data.firstname}/>
+              </div>
+                </Zoom>
+            )
+          }
+        </div>
+          
         <div className="AboutFour">
           <div className="AboutText">
             <p>
@@ -49,20 +61,15 @@ const About = () => {
                   <p>{data.lastname}</p>
                   <p>{data.email}</p>
                   <p>{data.number}</p>
-                  <p className="CV"><a  href={data.cv} alt={data.firstname} target="_blank" rel="noopener noreferrer">Téléchagez mon CV</a></p>
+                  <p className="CV"><a  href={data.cv} alt={data.firstname} target="_blank" rel="noopener noreferrer">Télécharger le CV</a></p>
                 </div>
               )
             }
           </div>
         </div>
-
-        <div className="image">
-          <Zoom>
-          <img src={laptop} alt='Ordinateur portable' />
-          </Zoom>
-        </div>
       </div>
     </div>
+    </section>
   );
 };
 

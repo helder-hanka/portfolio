@@ -1,6 +1,7 @@
 import atoutBranche from '../../Photos/Atoutbranche.png';
 import wildartmuseum from '../../Photos/wild-artmuseum.png'
 import cvHelder from "../../Photos/cv.pdf"
+import photoHelder from "../../Photos/Helder.jpg"
 
 export const arrayInfo = [
   {
@@ -12,7 +13,8 @@ export const arrayInfo = [
       email: "hfernandes238@gmail.com",
       number: "06 10 01 58 60",
       cv: cvHelder,
-      stack: "Stack : HTML, CSS, JS, React.js, Node.js, Git, MySQL, Python"
+      stack: "Stack : HTML, CSS, JS, React.js, Node.js, Git, MySQL, Python",
+      image: photoHelder
     },
     ackathon: {
       

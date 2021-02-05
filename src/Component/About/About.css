@@ -1,12 +1,13 @@
-.container-About {
-  background-color: black;
-  text-align: center;
-  background-image: url('../../Photos/wooden-wall.jpg');
+.section-About {
+  background-color: rgb(0 0 0 / 78%);
+
 }
 .container-About {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  text-align: center;
+  width: 96%;
+  max-width: 1020px;
+  margin: auto;
+  padding-top: 40px;
 }
 .About {
   padding-bottom: 20px;
@@ -24,12 +25,14 @@
 }
 
 .container-About div img {
-  width: 100%;
-  height: auto;
-  box-shadow: 5px 10px 5px #05050563;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: 5px 10px 5px #fdfdfd;
 }
 .container-About .title {
   margin-bottom: 30px;
+  color: white;
 }
 
 .AboutFour h2 {
@@ -55,24 +58,20 @@
 
 .datas .CV {
   padding: 5px;
-  background-color: #00000096;
+  background-color: #5e5f5a8a;
   width: 167px;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
 .stack {
   padding-top: 10px;
 }
 .AboutText, .AboutContact {
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-
-  box-shadow: 10px 4px 25px;
-  border-radius: 10px;
-  background-color: rgb(69 64 3 / 40%);
-  margin-bottom: 22px;
   padding: 10px;
+}
+.AboutContact h2, .AboutText h2 {
+  color: white;
 }
 .AboutFour {
   display: flex;
@@ -80,11 +79,11 @@
 	flex-wrap: wrap;
 }
 .container-About .image {
-  margin-right: auto;
-  margin-left: auto;
+  display: inline-grid;
+  padding-bottom: 30px;
 }
 
-@media only screen and (min-width: 1319px) {
+@media only screen and (min-width: 700px) {
   .About {
     display: flex;
 	  justify-content: space-around;
@@ -96,24 +95,10 @@
   .container-About {
     padding-bottom: 20px;
   }
-  .container-About .image {
-    order: -2;
-  }
   .AboutThree p {
     text-align: initial;
   }
   .datas p {
     text-align: center;
-  }
-  .container-About div img {
-    border-radius: 15px;
-    width: 100%;
-  }
-  
-}
-@media only screen and (min-width: 700px) {
-  .container-About div img {
-    border-radius: 15px;
-    width: 90%;
   }
 }

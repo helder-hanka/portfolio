@@ -3,7 +3,7 @@ import "./Footer.css"
 const Footer = () => {
     return (
         <footer>
-            <Roll left >
+            <Roll left cascade >
             <h2>design by Helder</h2>
             </Roll>
         </footer>
