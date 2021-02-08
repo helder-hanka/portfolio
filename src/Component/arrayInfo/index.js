@@ -1,7 +1,7 @@
 import atoutBranche from '../../Photos/Atoutbranche.png';
 import wildartmuseum from '../../Photos/wild-artmuseum.png'
 import cvHelder from "../../Photos/cv.pdf"
-import photoHelder from "../../Photos/Helder.jpg"
+import photoHelder from "../../Photos/Helder.png"
 
 export const arrayInfo = [
   {
