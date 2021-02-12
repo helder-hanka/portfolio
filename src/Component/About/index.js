@@ -41,15 +41,9 @@ const About = () => {
         <div className="AboutFour">
           <div className="AboutText">
             <p>
-              Après 10 ans d'expérience en tant que technicien de maintenance, je me suis orienté vers le métier de
-              <strong> Développeur Web Frond-End</strong>.
-              Car je suis passioné depuis mon enfance par l'informatique.
+              Passionné depuis l'enfance par l'informatique, j'ai décidé après 10 ans d'expérience dans le domaine de la maintenance technique de 
+              m'orienter vers le métier de developpeur web.
             </p>
-            <p>
-              En Mai 2019, je décide de devenir développeur web après plusieurs postes en tant que <strong>technicien de maintenance</strong>
-            </p>
-            <h2>Un développeur web passionné !</h2>
-            <p>Dès lors, je mis tout en oeuvre pour percer dans cette voie, tout en prenant du plaisir sur les divers projets développés.</p>
             <p className="stack"><strong>Stack: </strong> {displayStack} </p>
           </div>
           <div className="AboutContact">
