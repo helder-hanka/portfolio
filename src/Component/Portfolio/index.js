@@ -88,14 +88,6 @@ const Portfolio = () => {
                     <img src={data.image} alt={data.title}/>
                   </div>
                   <h3>{data.title}</h3>
-
-                  { data.text1 && <p className="dataText1">{data.text1}</p> }
-                  { data.text2 && <p className="dataText2">{data.text2}</p> }
-                  { data.text3 && <p className="dataText3"> {data.text3}</p> }
-                  { data.text4 && <p className="dataText4"><BsArrowReturnRight /> {data.text4}</p> }
-                  { data.text5 && <p className="dataText5"><BsArrowReturnRight /> {data.text5}</p> }
-                  { data.text6 && <p className="dataText6"><BsArrowReturnRight /> {data.text6}</p> }
-
                   { data && 
                     <p className="Source">
                       { data.reactjs && <strong>{ data.reactjs } </strong>} 
@@ -105,7 +97,14 @@ const Portfolio = () => {
                       { data.redux && <strong> { data.redux } </strong> }
                     </p>
                   }
-
+                  
+                  { data.text1 && <p className="dataText1">{data.text1}</p> }
+                  { data.text2 && <p className="dataText2">{data.text2}</p> }
+                  { data.text3 && <p className="dataText3"> {data.text3}</p> }
+                  { data.text4 && <p className="dataText4"><BsArrowReturnRight /> {data.text4}</p> }
+                  { data.text5 && <p className="dataText5"><BsArrowReturnRight /> {data.text5}</p> }
+                  { data.text6 && <p className="dataText6"><BsArrowReturnRight /> {data.text6}</p> }
+                  
                   {data.url && <p><a href={data.url} target="_blank" rel="noopener noreferrer">voir le site</a><GiClick /> <br /></p>}
                   <p><a href={data.sourceFront} target="_blank" rel="noopener noreferrer">Code source front</a><GiClick /> <br /></p>
                   {data.sourceBack && <p><a href={data.sourceBack} target="_blank" rel="noopener noreferrer">Code source back</a><GiClick /> </p>}
