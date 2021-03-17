@@ -23,11 +23,6 @@
 .face {
   background-color: darkgray;
 }
-/* .Portfolio-container {
-  width: 96%;
-  margin: auto;
-} */
-
 .card {
   margin-bottom: 20px;
   padding-right: 0;
@@ -92,33 +87,10 @@
   justify-content: space-evenly;
 }
 
-/* @media only screen and (min-width: 863px) {
-  .content img { */
-    /* width: 400px;
-    height: auto; */
-    /* width: 322px;
-    height: 200px;
-    border-radius: 3px;
-  } */
-  /* .container-contenu {
-    display: flex;
-    justify-content: space-evenly;
-  } */
-  /* .content {
-    text-align: center;
-  }
-
-  .Portfolio-container {
-    width: 100%;
-}
-} */
-
-
 .container-contenu {
   display: flex;
   flex-direction: row;
   font-size: 10px;
-  /* text-align: center; */
 }
 
 .card {
@@ -126,8 +98,17 @@
   flex: 50%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .container-contenu {
     flex-direction: column;
+  }
+}
+@media (min-width: 1000px) {
+  .modalHeader img {
+    width: 50%;
+    height: auto;
+  }
+  .content {
+    text-align: center;
   }
 }
