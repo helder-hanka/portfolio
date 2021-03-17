@@ -10,6 +10,7 @@ const Portfolio = () => {
 
   const [atoutBranches, setAtoutBranches] = useState([])
   const [wildArtMuseums, setWildArtMuseums] = useState([])
+  const [books, setBooks] = useState([])
   const [openModal, setOpenModal] = useState(false)
   const [showModalInfo, setShowModalInfo] = useState([])
   console.log('showModalInfo: ', showModalInfo)
@@ -20,6 +21,8 @@ const Portfolio = () => {
 
     const wildArtMuseums = arrayInfo.map(aboutProjet => aboutProjet.projets ).map(i => i.WildArtMuseums);
     setWildArtMuseums(wildArtMuseums[0]);
+    const books = arrayInfo.map(book => book.projets ).map(i => i.Books);
+    setBooks(books[0]);
    
   }, [])
 
@@ -27,9 +30,13 @@ const Portfolio = () => {
     setOpenModal(true);
     if(check === 'wildArtMuseums') {
       setShowModalInfo(wildArtMuseums)
-    } else if (check === 'atoutBranches')
-    setShowModalInfo(atoutBranches)
+    } else if (check === 'atoutBranches'){
+      setShowModalInfo(atoutBranches)
+    } else if (check === 'books'){
+      setShowModalInfo(books)
+    }
 
+    
   }
 
   const closeModal = () => {
@@ -46,7 +53,16 @@ const Portfolio = () => {
     </div>
   );
   const displayAtoubranches = atoutBranches.map((data, index) => 
-    <div className="card" onClick={ () => showModal('atoutBranches') }>
+    <div key={index} className="card" onClick={ () => showModal('atoutBranches') }>
+      <div className="content">
+        <img src={data.image} alt={data.title}/>
+      </div>
+        <h3>{data.title}</h3>
+        <p className="BsInfoSquareFill"><BsInfoSquareFill /></p>
+    </div>
+  );
+  const displayBooks = books.map((data, index) => 
+    <div key={index} className="card" onClick={ () => showModal('books') }>
       <div className="content">
         <img src={data.image} alt={data.title}/>
       </div>
@@ -60,6 +76,7 @@ const Portfolio = () => {
       <div className="container-contenu">
         {displayWildArtMuseums}
         {displayAtoubranches}
+        {displayBooks}
       </div>
       <Modal showModal={openModal} closeModal ={closeModal}> 
         <Fragment >
@@ -72,11 +89,14 @@ const Portfolio = () => {
                     <img src={data.image} alt={data.title}/>
                   </div>
                   <h3>{data.title}</h3>
-                  { data && <p className="Source">
-                    { data.reactjs && <strong>{ data.reactjs } </strong>} 
-                    { data.css && <strong> { data.css } </strong> } 
-                    { data.nodejs && <strong> { data.nodejs } </strong> } 
-                    { data.sql && <strong> { data.sql } </strong> }</p>
+                  { data && 
+                    <p className="Source">
+                      { data.reactjs && <strong>{ data.reactjs } </strong>} 
+                      { data.css && <strong> { data.css } </strong> } 
+                      { data.nodejs && <strong> { data.nodejs } </strong> } 
+                      { data.sql && <strong> { data.sql } </strong> }
+                      { data.redux && <strong> { data.redux } </strong> }
+                    </p>
                   }
                   { data.text1 && <p className="dataText1">{data.text1}</p> }
                   { data.text2 && <p className="dataText2">{data.text2}</p> }

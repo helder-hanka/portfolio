@@ -2,10 +2,13 @@ import atoutBranche from '../../Photos/Atoutbranche.png';
 import wildartmuseum from '../../Photos/wild-artmuseum.png'
 import cvHelder from "../../Photos/cv.pdf"
 import photoHelder from "../../Photos/Helder.png"
+import books from "../../Photos/books.png"
 import { FaNode } from 'react-icons/fa';
 import { GrReactjs } from 'react-icons/gr';
 import { GrMysql } from 'react-icons/gr';
 import { SiCss3 } from 'react-icons/si';
+import { SiRedux } from 'react-icons/si';
+import { BsFillBootstrapFill } from 'react-icons/bs';
 
 export const arrayInfo = [
   {
@@ -54,6 +57,18 @@ export const arrayInfo = [
           reactjs: <GrReactjs />,
           css: <SiCss3 />,
           sql: <GrMysql />,
+        }
+      ],
+      Books: [
+        {
+          title: "BOOKS",
+          url: "https://application-books.netlify.app",
+          sourceFront: "https://github.com/helder-hanka/Books/blob/master/src/Containers/SearchBooks.js",
+          text1: "J'ai codé une petite application BOOKS pour découvrir tous les livres avec API Google Books et aussi sauvegardés dans Local storage pour pas les retrouver plus tard.",
+          image: books,
+          reactjs: <GrReactjs />,
+          css: <BsFillBootstrapFill />,
+          redux: <SiRedux />
         }
       ]
     }
