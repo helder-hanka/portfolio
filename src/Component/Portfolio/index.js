@@ -13,7 +13,6 @@ const Portfolio = () => {
   const [books, setBooks] = useState([])
   const [openModal, setOpenModal] = useState(false)
   const [showModalInfo, setShowModalInfo] = useState([])
-  console.log('showModalInfo: ', showModalInfo)
 
   useEffect(() => {
     const atoutBranches = arrayInfo.map(aboutProjet => aboutProjet.projets ).map(i => i.AtoutBranche);
