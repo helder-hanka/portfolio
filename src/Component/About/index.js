@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { Fragment, useEffect, useState } from "react"
 import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
 import { arrayInfo } from "../arrayInfo"
@@ -6,14 +6,13 @@ import './About.css'
 const About = () => {
 
   const [datas, setData] = useState([])
-  console.log(datas)
 
   useEffect(() => {
     const data = arrayInfo.map(data => data.aboutMe)
     setData(data)
   }, [])
 
-  const displayStack = datas.map(data => data.stack);
+  const displayStack = datas.map((data, index )=> <Fragment key={index}>{ data.stack }</Fragment>);
 
   return (
     <section className="section-About">
@@ -25,18 +24,20 @@ const About = () => {
         </Slide>
       </div>
       <div className="About">
-
-        <div className="image">
-          {
-            datas && datas.map((data, index) => 
-                <Zoom>
-              <div key={index}>
-                <img src={data.image} alt={data.firstname}/>
-              </div>
-                </Zoom>
-            )
-          }
-        </div>
+        
+        <Zoom>
+          <div className="image"> 
+            {
+              datas && datas.map((data, index) => 
+                
+                <div key={index}>
+                  <img src={data.image} alt={data.firstname}/>
+                </div>
+                  
+              )
+            }
+          </div>
+        </Zoom>
           
         <div className="AboutFour">
           <div className="AboutText">
