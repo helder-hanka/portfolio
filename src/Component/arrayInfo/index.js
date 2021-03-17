@@ -64,7 +64,7 @@ export const arrayInfo = [
           title: "BOOKS",
           url: "https://application-books.netlify.app",
           sourceFront: "https://github.com/helder-hanka/Books/blob/master/src/Containers/SearchBooks.js",
-          text1: "J'ai codé une petite application BOOKS pour découvrir tous les livres avec API Google Books et aussi sauvegardés dans Local storage pour pas les retrouver plus tard.",
+          text1: "J'ai codé une petite application BOOKS pour découvrir tous les livres avec API Google Books et aussi sauvegarder dans Local storage pour les retrouver plus tard.",
           image: books,
           reactjs: <GrReactjs />,
           css: <BsFillBootstrapFill />,
