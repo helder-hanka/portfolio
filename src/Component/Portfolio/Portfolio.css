@@ -23,10 +23,10 @@
 .face {
   background-color: darkgray;
 }
-.Portfolio-container {
+/* .Portfolio-container {
   width: 96%;
   margin: auto;
-}
+} */
 
 .card {
   margin-bottom: 20px;
@@ -34,7 +34,7 @@
 }
 
 .card h3, .card p {
-  margin: auto;
+  margin: 5px;
 }
 .card h3 {
   padding-bottom: 5px;
@@ -87,17 +87,47 @@
   padding: 5px;
 }
 
-@media only screen and (min-width: 863px) {
-  .content img {
-    width: 400px;
-    height: auto;
+.container-contenu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* @media only screen and (min-width: 863px) {
+  .content img { */
+    /* width: 400px;
+    height: auto; */
+    /* width: 322px;
+    height: 200px;
     border-radius: 3px;
-  }
-  .container-contenu {
+  } */
+  /* .container-contenu {
     display: flex;
     justify-content: space-evenly;
-  }
-  .content {
+  } */
+  /* .content {
     text-align: center;
+  }
+
+  .Portfolio-container {
+    width: 100%;
+}
+} */
+
+
+.container-contenu {
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  /* text-align: center; */
+}
+
+.card {
+  padding: 10px;
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .container-contenu {
+    flex-direction: column;
   }
 }
