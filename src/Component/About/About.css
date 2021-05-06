@@ -25,12 +25,9 @@
 }
 
 .container-About div img {
-  width: 150px;
-  height: 150px;
-  /* width: 100px; */
+  width: 100px; 
   height: auto;
   border-radius: 100%;
-  /* box-shadow: 5px 10px 5px #fdfdfd; */
   box-shadow: 5px 10px 5px #2a2626;
 }
 
@@ -93,9 +90,9 @@
 	  justify-content: space-around;
 	  align-content: center;
   }
-  /* .container-About div img {
+  .container-About div img {
     width: 200px;
-  } */
+  }
   .About, .AboutFour, .image {
     padding: 10px;
   }
