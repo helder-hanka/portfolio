@@ -1,7 +1,7 @@
 import atoutBranche from '../../Photos/Atoutbranche.png';
 import wildartmuseum from '../../Photos/wild-artmuseum.png'
-import cvHelder from "../../Photos/cv.pdf"
-import photoHelder from "../../Photos/Helder.png"
+import cvHelder from "../../Photos/CV_Helder.pdf"
+import photoHelder from "../../Photos/img_Helder.jpeg"
 import books from "../../Photos/books.png"
 import { FaNode } from 'react-icons/fa';
 import { GrReactjs } from 'react-icons/gr';
