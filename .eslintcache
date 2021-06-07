@@ -53,8 +53,8 @@
     "hashOfConfig": "11"
   },
   {
-    "size": 3108,
-    "mtime": 1620317823440,
+    "size": 3150,
+    "mtime": 1623074503447,
     "results": "18",
     "hashOfConfig": "11"
   },
@@ -98,7 +98,8 @@
     "errorCount": 0,
     "warningCount": 0,
     "fixableErrorCount": 0,
-    "fixableWarningCount": 0
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "22"
   },
   {
     "filePath": "29",
@@ -106,7 +107,8 @@
     "errorCount": 0,
     "warningCount": 0,
     "fixableErrorCount": 0,
-    "fixableWarningCount": 0
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "22"
   },
   {
     "filePath": "31",
