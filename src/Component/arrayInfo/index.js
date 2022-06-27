@@ -1,6 +1,6 @@
 import atoutBranche from "../../Photos/Atoutbranche.png";
 import wildartmuseum from "../../Photos/wild-artmuseum.png";
-import cvHelder from "../../Photos/CV_Helder.pdf";
+import cvHelder from "../../Photos/CV_Fernandes.png";
 import photoHelder from "../../Photos/img_Helder.jpeg";
 import books from "../../Photos/books.png";
 import { FaNode } from "react-icons/fa";
@@ -9,43 +9,6 @@ import { GrMysql } from "react-icons/gr";
 import { SiCss3 } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { BsFillBootstrapFill } from "react-icons/bs";
-import imageTel1 from "../../Photos/images_react_native/imageTel1.png";
-import imageTel2 from "../../Photos/images_react_native/imageTel2.png";
-import imageTel3 from "../../Photos/images_react_native/imageTel3.png";
-import imageTel4 from "../../Photos/images_react_native/imageTel4.png";
-import imageTel5 from "../../Photos/images_react_native/imageTel5.png";
-import imageTel6 from "../../Photos/images_react_native/imageTel6.png";
-import imageTel7 from "../../Photos/images_react_native/imageTel7.png";
-import imageTel8 from "../../Photos/images_react_native/imageTel8.png";
-import imageTel9 from "../../Photos/images_react_native/imageTel9.png";
-import imageTel10 from "../../Photos/images_react_native/imageTel10.png";
-import imageTel11 from "../../Photos/images_react_native/imageTel11.png";
-import imageTel12 from "../../Photos/images_react_native/imageTel12.png";
-import imageTel13 from "../../Photos/images_react_native/imageTel13.png";
-import imageTel14 from "../../Photos/images_react_native/imageTel14.png";
-import imageTel15 from "../../Photos/images_react_native/imageTel15.png";
-import imageTel16 from "../../Photos/images_react_native/imageTel16.png";
-import imageTel17 from "../../Photos/images_react_native/imageTel17.png";
-
-const arrayImgTel = [
-  imageTel1,
-  imageTel2,
-  imageTel3,
-  imageTel4,
-  imageTel5,
-  imageTel6,
-  imageTel7,
-  imageTel8,
-  imageTel9,
-  imageTel10,
-  imageTel11,
-  imageTel12,
-  imageTel13,
-  imageTel14,
-  imageTel15,
-  imageTel16,
-  imageTel17,
-];
 
 export const arrayInfo = [
   {
@@ -57,7 +20,7 @@ export const arrayInfo = [
       email: "hfernandes238@gmail.com",
       number: "06 10 01 58 60",
       cv: cvHelder,
-      stack: "HTML, CSS, JS, React.js, React Native, Node.js, Git, MySQL",
+      stack: "Stack : HTML, CSS, JS, React.js, Node.js, Git, MySQL",
       image: photoHelder,
     },
     ackathon: {},
@@ -108,20 +71,6 @@ export const arrayInfo = [
           text1:
             "J'ai codé une petite application BOOKS pour découvrir tous les livres avec API Google Books et aussi sauvegarder dans Local storage pour les retrouver plus tard.",
           image: books,
-          reactjs: <GrReactjs />,
-          css: <BsFillBootstrapFill />,
-          redux: <SiRedux />,
-        },
-      ],
-      eCommerceReacNative: [
-        {
-          title: "E-Commerce React Native",
-          url: "",
-          sourceFront:
-            "https://github.com/helder-hanka/e-commerce_React_native",
-          text1:
-            "C'est une application e-commerce très simple à utiliser en React Native que vous pouvez acheter ou vendre votre formation",
-          image: arrayImgTel,
           reactjs: <GrReactjs />,
           css: <BsFillBootstrapFill />,
           redux: <SiRedux />,
