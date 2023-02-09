@@ -1,108 +1,99 @@
-.section-About {
-  background-color: rgb(0 0 0 / 78%);
-
-}
 .container-About {
-  text-align: center;
-  width: 96%;
-  max-width: 1020px;
-  margin: auto;
-  padding-top: 40px;
-}
-.About {
-  padding-bottom: 20px;
-}
-
-.container-About div h1 {
-  padding-top: 20px;
-}
-.container-About h1, .container-About h2 {
-  margin: auto;
+  align-items: center;
+  background-color: #3c79f5;
+  margin-top: -4px;
+  padding-top: 3rem;
 }
 .container-About h2 {
-  margin: auto;
-  font-size: larger;
-}
-
-.container-About div img {
-  width: 100px; 
-  height: auto;
-  border-radius: 100%;
-  box-shadow: 5px 10px 5px #2a2626;
-}
-
-.container-About .title {
-  margin-bottom: 30px;
-  color: white;
-}
-
-.AboutFour h2 {
-  padding: 10px;
-  font-size: larger;
-}
-.AboutFour p {
-  text-align: initial;
-  margin: auto;
-  color: #ffffffc7;
-}
-
-.CV a {
-  text-decoration: none;
-  color: white;
-  padding: 8px;
-}
-
-.datas p {
+  font-family: "fangsong";
+  font-weight: 800;
+  font-size: 2rem;
+  font-family: "inherit";
+  color: aliceblue;
   text-align: center;
 }
 
-
-.datas .CV {
-  padding: 5px;
-  background-color: #5e5f5a8a;
-  width: 167px;
-  border-radius: 5px;
-  margin-top: 10px;
+.AboutText {
+  padding-bottom: 16rem;
 }
-
-.stack {
-  padding-top: 10px;
-}
-.AboutText, .AboutContact {
-  padding: 10px;
-}
-.AboutContact h2, .AboutText h2 {
+.AboutText p {
+  padding: 1rem;
+  font-size: 1.5rem;
   color: white;
-}
-.AboutFour {
-  display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-}
-.container-About .image {
-  display: inline-grid;
-  padding-bottom: 30px;
+  text-align: center;
 }
 
-@media only screen and (min-width: 700px) {
-  .About {
+.DesignerFrontBack {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 700px;
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%);
+  padding: 0px;
+}
+
+.DesignerFrontBack img {
+  width: 40px;
+}
+.DesignerFrontBack p {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.DesignerFrontBack > div {
+  text-align: center;
+  border-right: 1px solid #e6ecf8;
+  border-top-right-radius: 20px;
+}
+
+.column {
+  flex: 70%;
+  padding: 39px 6px;
+}
+.column h1 {
+  font-size: 1.3em;
+  font-family: serif;
+}
+.column p {
+  font-size: 17px;
+  font-family: serif;
+}
+
+.containerDesignerFrontBack {
+  position: relative;
+  top: -10rem;
+  width: 95%;
+  margin: auto;
+}
+
+.list-title {
+  color: #3b7af5;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .DesignerFrontBack {
     display: flex;
-	  justify-content: space-around;
-	  align-content: center;
+    flex-direction: column;
+    height: 100%;
   }
-  .container-About div img {
-    width: 200px;
-  }
-  .About, .AboutFour, .image {
-    padding: 10px;
-  }
-  .container-About {
-    padding-bottom: 20px;
-  }
-  .AboutThree p {
-    text-align: initial;
-  }
-  .datas p {
+
+  .DesignerFrontBack > div {
     text-align: center;
+    border-bottom: 1px solid #e6ecf8;
+    border-right: 0px solid #e6ecf8;
+  }
+
+  .DesignerFrontBack p,
+  h1 {
+    margin: auto;
+  }
+  .AboutText p {
+    font-size: 1em;
+  }
+  .container-About .title h2 {
+    font-size: 1.5em;
   }
 }
