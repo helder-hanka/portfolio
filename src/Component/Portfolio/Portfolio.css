@@ -1,9 +1,9 @@
 :root {
   --white-color: #ffffff;
-  --light-grey-color: #EAE8E8;
+  --light-grey-color: #eae8e8;
   --light-green-color: #1ecc78;
   --green-color: #0cb765;
-  --red-color: #EB1D27;
+  --red-color: #eb1d27;
   --blue-color: #4f78a4;
   --dark-red-color: #d31017;
   --dark-grey-color: #363636;
@@ -12,40 +12,38 @@
 }
 
 .content img {
-  width: 100%;
+  width: 60%;
   height: auto;
   border-radius: 3px;
 }
-.content img:hover, .BsInfoSquareFill:hover {
-  cursor: pointer;
-  opacity: 0.5;
+.content {
+  text-align: center;
 }
 .face {
   background-color: darkgray;
 }
-/* .Portfolio-container {
-  width: 96%;
-  margin: auto;
-} */
 
 .card {
   margin-bottom: 20px;
   padding-right: 0;
 }
 
-.card h3, .card p {
+.card h3,
+.card p {
   margin: 5px;
 }
 .card h3 {
   padding-bottom: 5px;
 }
 
-.Portfolio-container h1, .Portfolio-container h3{
+.Portfolio-container h1,
+.Portfolio-container h3 {
   text-align: center;
 }
 
 .Portfolio-container h1 {
   font-size: 1.5em;
+  padding-bottom: 4rem;
 }
 
 .card a {
@@ -68,7 +66,8 @@
   color: white;
 }
 
-.dataText1, .dataText2{
+.dataText1,
+.dataText2 {
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -92,33 +91,10 @@
   justify-content: space-evenly;
 }
 
-/* @media only screen and (min-width: 863px) {
-  .content img { */
-    /* width: 400px;
-    height: auto; */
-    /* width: 322px;
-    height: 200px;
-    border-radius: 3px;
-  } */
-  /* .container-contenu {
-    display: flex;
-    justify-content: space-evenly;
-  } */
-  /* .content {
-    text-align: center;
-  }
-
-  .Portfolio-container {
-    width: 100%;
-}
-} */
-
-
 .container-contenu {
   display: flex;
   flex-direction: row;
   font-size: 10px;
-  /* text-align: center; */
 }
 
 .card {
@@ -129,5 +105,8 @@
 @media (max-width: 800px) {
   .container-contenu {
     flex-direction: column;
+  }
+  .modalContainer {
+    flex: 1 1 65%;
   }
 }
