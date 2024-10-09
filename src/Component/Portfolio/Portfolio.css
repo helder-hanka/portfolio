@@ -14,15 +14,6 @@
 .Portfolio-container {
   padding: 0 40px;
 }
-<<<<<<< HEAD
-.content {
-  text-align: center;
-}
-.face {
-  background-color: darkgray;
-}
-=======
->>>>>>> dev
 .card {
   flex: 1 1 30%;
   border-radius: 10px !important;
@@ -80,14 +71,6 @@
   align-items: center;
 }
 
-<<<<<<< HEAD
-@media (max-width: 700px) {
-  .container-contenu {
-    flex-direction: column;
-  }
-  .modalContainer {
-    flex: 1 1 65%;
-=======
 @media (max-width: 768px) {
   .Portfolio-container {
     padding: 0 10px;
@@ -96,6 +79,5 @@
 @media (max-width: 1200px) {
   .card {
     flex: 1 1 50%;
->>>>>>> dev
   }
 }

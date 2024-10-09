@@ -8,8 +8,6 @@ import { GrReactjs } from "react-icons/gr";
 import { GrMysql } from "react-icons/gr";
 import { SiCss3, SiRedux } from "react-icons/si";
 import { BsFillBootstrapFill } from "react-icons/bs";
-<<<<<<< HEAD
-=======
 import { IoLogoNodejs } from "react-icons/io5";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import imageTel1 from "../../Photos/images_react_native/imageTel1.png";
@@ -24,7 +22,6 @@ import kasa from "../../Photos/kasa.png";
 import monVieuxGrimoire from "../../Photos/monVieuxGrimoire.png";
 
 const arrayImgTel = [imageTel1, imageTel2, imageTel3, imageTel4, imageTel5];
->>>>>>> dev
 
 export const arrayInfo = [
   {
@@ -92,8 +89,6 @@ export const arrayInfo = [
           redux: <SiRedux />,
         },
       ],
-<<<<<<< HEAD
-=======
       eCommerceReacNative: [
         {
           title: "E-Commerce React Native",
@@ -176,7 +171,6 @@ export const arrayInfo = [
           nodejs: <FaNode />,
         },
       ],
->>>>>>> dev
     },
   },
 ];
