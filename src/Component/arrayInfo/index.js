@@ -26,7 +26,6 @@ import imageTel13 from "../../Photos/images_react_native/imageTel13.png";
 import imageTel14 from "../../Photos/images_react_native/imageTel14.png";
 import imageTel15 from "../../Photos/images_react_native/imageTel15.png";
 import imageTel16 from "../../Photos/images_react_native/imageTel16.png";
-import imageTel17 from "../../Photos/images_react_native/imageTel17.png";
 import bookiTravelAgency from "../../Photos/bookiTravelAgency.png";
 import accueilSohieBluel from "../../Photos/accueilSohieBluel.png";
 import ninaCarducci from "../../Photos/ninaCarducci.png";
@@ -50,7 +49,6 @@ const arrayImgTel = [
   imageTel14,
   imageTel15,
   imageTel16,
-  imageTel17,
 ];
 
 export const arrayInfo = [

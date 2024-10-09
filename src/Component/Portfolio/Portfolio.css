@@ -11,102 +11,58 @@
   --deep-black-color: #000000;
 }
 
-.content img {
-  width: 60%;
-  height: auto;
-  border-radius: 3px;
+.Portfolio-container {
+  padding: 0 40px;
 }
-.content {
-  text-align: center;
-}
-.face {
-  background-color: darkgray;
-}
-
 .card {
-  margin-bottom: 20px;
-  padding-right: 0;
+  flex: 1 1 30%;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
 }
-
-.card h3,
-.card p {
-  margin: 5px;
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: 0.6s ease;
+  backface-visibility: hidden;
 }
-.card h3 {
-  padding-bottom: 5px;
+.container-contenu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.Portfolio-container h1,
-.Portfolio-container h3 {
+.card:hover .image {
+  opacity: 0.3;
+}
+.card:hover .containerTitle {
+  opacity: 1;
+}
+.containerTitle {
+  position: absolute;
+  bottom: 10px;
+  border-radius: 7px;
   text-align: center;
-}
-
-.Portfolio-container h1 {
-  font-size: 1.5em;
-  padding-bottom: 4rem;
-}
-
-.card a {
-  text-decoration: none;
-  padding: 8px;
-}
-
-.modalHeader {
   background-color: var(--black-color);
+  opacity: 0;
+  transition: 0.5ms ease;
+}
+
+.containerTitle h3 {
+  margin: 0;
   color: var(--white-color);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  padding: 10px 22px;
 }
 
-.modalHeader p {
-  padding-left: 8px;
-}
-
-.modalHeader a {
-  color: white;
-}
-
-.dataText1,
-.dataText2 {
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-.dataText6 {
-  padding-bottom: 10px;
-}
-.Source {
-  font-size: 3em;
-}
-.BsInfoSquareFill {
-  font-size: 2em;
-}
-.AiFillCloseCircle {
-  font-size: 2em;
-  margin: auto;
-  padding: 5px;
-}
-
-.container-contenu {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.container-contenu {
-  display: flex;
-  flex-direction: row;
-  font-size: 10px;
-}
-
-.card {
-  padding: 10px;
-  flex: 50%;
-}
-
-@media (max-width: 800px) {
-  .container-contenu {
-    flex-direction: column;
+@media (max-width: 768px) {
+  .Portfolio-container {
+    padding: 0 10px;
   }
-  .modalContainer {
-    flex: 1 1 65%;
+}
+@media (max-width: 1200px) {
+  .card {
+    flex: 1 1 50%;
   }
 }
