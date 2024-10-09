@@ -1,13 +1,13 @@
-import Roll from 'react-reveal/Roll';
-import "./Footer.css"
+import { Fade } from "react-awesome-reveal";
+import "./Footer.css";
 const Footer = () => {
-    return (
-        <footer>
-            <Roll left cascade >
-            <h2>design by Helder</h2>
-            </Roll>
-        </footer>
-    )
-}
+  return (
+    <Fade left cascade>
+      <footer>
+        <h2>design by Helder</h2>
+      </footer>
+    </Fade>
+  );
+};
 
-export default Footer
+export default Footer;
