@@ -10,7 +10,7 @@
 }
 .langages {
   margin: 0;
-  font-size: 6em;
+  font-size: 3em;
 }
 .modal-footer {
   display: flex;
@@ -20,18 +20,14 @@
 }
 
 .textsContainer {
-  font-size: 2em;
+  font-size: 1.3em;
   padding-top: 20px;
 }
 .textInfo {
   padding-bottom: 20px;
 }
 @media (max-width: 768px) {
-  .textsContainer {
-    font-size: 1.3em;
-  }
-  .Source,
-  .langages {
+  .Source {
     font-size: 3em;
   }
 }
