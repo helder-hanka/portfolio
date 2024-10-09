@@ -43,17 +43,21 @@
 .containerTitle {
   position: absolute;
   bottom: 10px;
-  border-radius: 7px;
+  border-radius: 8px;
   text-align: center;
   background-color: var(--black-color);
   opacity: 0;
-  transition: 0.5ms ease;
+  transition: 0.6s ease;
 }
 
 .containerTitle h3 {
   margin: 0;
   color: var(--white-color);
   padding: 10px 22px;
+}
+.card {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
