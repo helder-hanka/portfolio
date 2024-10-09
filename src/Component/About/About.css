@@ -15,12 +15,14 @@
 
 .AboutText {
   padding-bottom: 16rem;
+  max-width: 1089px;
+  margin: auto;
 }
 .AboutText p {
   padding: 1rem;
   font-size: 1.5rem;
   color: white;
-  text-align: center;
+  text-align: justify;
 }
 
 .DesignerFrontBack {
