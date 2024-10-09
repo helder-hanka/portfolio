@@ -1,5 +1,5 @@
 import React from "react";
-import Slide from "react-reveal/Slide";
+import { Slide } from "react-awesome-reveal";
 import "./About.css";
 import design from "../../Photos/design.png";
 import process from "../../Photos/process.png";
