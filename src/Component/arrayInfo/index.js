@@ -15,41 +15,13 @@ import imageTel2 from "../../Photos/images_react_native/imageTel2.png";
 import imageTel3 from "../../Photos/images_react_native/imageTel3.png";
 import imageTel4 from "../../Photos/images_react_native/imageTel4.png";
 import imageTel5 from "../../Photos/images_react_native/imageTel5.png";
-import imageTel6 from "../../Photos/images_react_native/imageTel6.png";
-import imageTel7 from "../../Photos/images_react_native/imageTel7.png";
-import imageTel8 from "../../Photos/images_react_native/imageTel8.png";
-import imageTel9 from "../../Photos/images_react_native/imageTel9.png";
-import imageTel10 from "../../Photos/images_react_native/imageTel10.png";
-import imageTel11 from "../../Photos/images_react_native/imageTel11.png";
-import imageTel12 from "../../Photos/images_react_native/imageTel12.png";
-import imageTel13 from "../../Photos/images_react_native/imageTel13.png";
-import imageTel14 from "../../Photos/images_react_native/imageTel14.png";
-import imageTel15 from "../../Photos/images_react_native/imageTel15.png";
-import imageTel16 from "../../Photos/images_react_native/imageTel16.png";
 import bookiTravelAgency from "../../Photos/bookiTravelAgency.png";
 import accueilSohieBluel from "../../Photos/accueilSohieBluel.png";
 import ninaCarducci from "../../Photos/ninaCarducci.png";
 import kasa from "../../Photos/kasa.png";
 import monVieuxGrimoire from "../../Photos/monVieuxGrimoire.png";
 
-const arrayImgTel = [
-  imageTel1,
-  imageTel2,
-  imageTel3,
-  imageTel4,
-  imageTel5,
-  imageTel6,
-  imageTel7,
-  imageTel8,
-  imageTel9,
-  imageTel10,
-  imageTel11,
-  imageTel12,
-  imageTel13,
-  imageTel14,
-  imageTel15,
-  imageTel16,
-];
+const arrayImgTel = [imageTel1, imageTel2, imageTel3, imageTel4, imageTel5];
 
 export const arrayInfo = [
   {
