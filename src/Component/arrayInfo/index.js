@@ -1,6 +1,6 @@
 import atoutBranche from "../../Photos/Atoutbranche.png";
 import wildartmuseum from "../../Photos/wild-artmuseum.png";
-import cvHelder from "../../Photos/CV_Helder.pdf";
+import cvHelder from "../../Photos/CV_Fernandes.png";
 import photoHelder from "../../Photos/img_Helder.jpeg";
 import books from "../../Photos/books.png";
 import { FaNode, FaSass } from "react-icons/fa";
@@ -33,7 +33,7 @@ export const arrayInfo = [
       email: "hfernandes238@gmail.com",
       number: "06 10 01 58 60",
       cv: cvHelder,
-      stack: "HTML, CSS, JS, React.js, React Native, Node.js, Git, MySQL",
+      stack: "Stack : HTML, CSS, JS, React.js, Node.js, Git, MySQL",
       image: photoHelder,
     },
     ackathon: {},
