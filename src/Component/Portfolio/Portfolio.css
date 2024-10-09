@@ -16,9 +16,15 @@
 }
 .card {
   flex: 1 1 30%;
-  border-radius: 10px;
+  border-radius: 10px !important;
   position: relative;
   cursor: pointer;
+  border: none !important;
+  background-color: var(--black-color) !important;
+  -webkit-transform: scale(100%);
+  transform: scale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .card img {
   width: 100%;
@@ -38,6 +44,11 @@
   opacity: 0.3;
 }
 .card:hover .containerTitle {
+  opacity: 1;
+}
+.card:hover {
+  -webkit-transform: scale(103%);
+  transform: scale(103%);
   opacity: 1;
 }
 .containerTitle {
